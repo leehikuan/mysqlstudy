@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  #���ݿ���������
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8
+    username: root
+    password: root
+
+#mybatis���������
+mybatis:
+  #mapper�����ļ�
+#  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.leehikuan.mysqlstudy.entity
+  #�����շ�����
+  configuration:
+    map-underscore-to-camel-case: true
