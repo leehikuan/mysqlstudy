@@ -22,5 +22,5 @@ public interface WriteDao {
             "</foreach>",
             "</script>"
     })
-    int insertUserList(List<User> list);
+    int insertUsers(List<User> list);
 }
