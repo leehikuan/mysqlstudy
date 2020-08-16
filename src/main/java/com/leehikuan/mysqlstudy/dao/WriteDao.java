@@ -1,6 +1,7 @@
 package com.leehikuan.mysqlstudy.dao;
 
 import com.leehikuan.mysqlstudy.entity.User;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -13,5 +14,13 @@ import java.util.List;
 @Mapper
 public interface WriteDao {
 
+    @Insert({
+            "<script>",
+            "insert into user_bak(id, name, age,sex,address) values ",
+            "<foreach collection='list' item='item' index='index' separator=','>",
+            "(#{item.id}, #{item.name}, #{item.age}, #{item.sex}, #{item.address})",
+            "</foreach>",
+            "</script>"
+    })
     int insertUserList(List<User> list);
 }
