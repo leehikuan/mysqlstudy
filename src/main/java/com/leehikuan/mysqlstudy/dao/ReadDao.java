@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 /**
+ * 读数据类
  * @author leehikuan
  * @create 2020-08-14 22:42
  */

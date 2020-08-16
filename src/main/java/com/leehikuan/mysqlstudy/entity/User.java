@@ -3,6 +3,7 @@ package com.leehikuan.mysqlstudy.entity;
 import lombok.Data;
 
 /**
+ * 实体类
  * @author leehikuan
  * @create 2020-08-14 22:44
  */

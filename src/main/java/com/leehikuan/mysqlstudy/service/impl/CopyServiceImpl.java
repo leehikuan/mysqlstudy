@@ -28,7 +28,7 @@ public class CopyServiceImpl implements CopyService {
     private ThreadPoolUtils threadPoolUtils;
     @Override
     public boolean copy() {
-//        System.out.println("凯斯勒===");
+        System.out.println("凯斯勒===");
         Runnable task=new MyTask(0,2,readDao,writeDao);
         Runnable task1=new MyTask(2,2,readDao,writeDao);
 //        List<User> list=readDao.getRowsByStartAndEnd(0,10);
