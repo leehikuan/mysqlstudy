@@ -7,8 +7,8 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 /**
- * 读数据持久层类
- * 读数据Dao类
+ * 
+ * 读取数据Dao类
  * @author leehikuan
  * @create 2020-08-14 22:42
  */
