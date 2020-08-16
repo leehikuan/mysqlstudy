@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
+ *更新数据库
  * @author leehikuan
  * @create 2020-08-14 22:42
  */
